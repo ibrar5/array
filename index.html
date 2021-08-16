@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 30px;">Family Book</h1>
+        <img id="img1" style=" height: 500px;" src="">
+        <div><p id="p1"></p></div>
+        <div>
+        <button style="margin-top: 20px;" onclick="btn1()">Next</button></div>
+        <script>
+            var image =["family-book.jpg","father-and-son.jpg", "daughter-and-mother.jpg", "grandpa.jpg"]
+            var name =["family book","father and son", "daughter-and-mother", "grandpa"]
+            var i=0;
+            function btn1(){
+                if(i==4){
+                    i = 0;
+                }
+                document.getElementById("img1").src = image[i]; i++;
+                document.getElementById("p1").innerHTML = name[i]; i++;}
+               
+            
+        </script>
+    </body>
+</html>
